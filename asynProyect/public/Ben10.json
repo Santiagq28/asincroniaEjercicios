@@ -1,0 +1,28 @@
+{
+    "name":"Benjamin Tennyson",
+    "age":10,
+    "family":{
+        "grandfather":"Abuelo Max",
+        "cousin":"Gwen Tennyson"
+    },
+    "aliens":[
+        "CuatroBrazos",
+        "XLR8",
+        "Materia Gris",
+        "Fantasmático",
+        "Diamante",
+        "Bestia",
+        "Fuego",
+        "Insectoide",
+        "Acuático",
+        "Ultra T"
+
+    ],
+    "series":[
+        "Ben 10",
+        "Alien Force",
+        "Ultimate Alien",
+        "Omniverse",
+        "Reboot"
+    ]
+}

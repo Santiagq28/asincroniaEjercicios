@@ -3,13 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Tarjetas from '../components/vue/Tarjetas.vue';
 import Tarjetas2 from '../components/vue/Tarjetas2.vue';
+import Ben10 from '../components/vue/Ben10.vue';
 ---
 
 <Layout title="Welcome to Astro.">
 	<div class="text-center grid justify-center w-[100%]">
 		<Tarjetas2 client:load/>
 		<Tarjetas client:only/>
-
+		<Ben10 client:load/>
 	</div>
 </Layout>
 

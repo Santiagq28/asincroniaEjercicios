@@ -14,7 +14,8 @@
     const left = "Left";
     const right = "Right";
     
-    
+    /* Abajo a la hora de acceder alguna propiedad de los objetos, puedes usar tanto .propiedad o ['propiedad'],
+    lo segundo te sirve si el nombre de la propiedad lo proporciona alguna variable*/ 
 </script>
 
 <template>
@@ -22,7 +23,7 @@
         <div 
             :class="{'hidden': data2[0].characterDirection  === right}"
             class="w-28 h-28 bg-top bg-cover rounded-full bg-white"
-            :style="{backgroundImage:`url(${data2[0].image})`}"
+            :style="{backgroundImage:`url(${data2[0]['image']})`}" 
         > 
         </div>
         <div class="grid max-w-[50%]">
