@@ -18,20 +18,20 @@
 </script>
 
 <template>
-    <div class="flex bg-slate-400 w-[60vh] h-36 p-4 m-4"> 
+    <div class="flex bg-slate-400 w-[60vh] h-36 p-4 m-4 border border-black justify-around rounded"> 
         <div 
             :class="{'hidden': data2[0].characterDirection  === right}"
-            class="w-[50%] h-auto bg-top bg-cover rounded-full"
+            class="w-28 h-28 bg-top bg-cover rounded-full bg-white"
             :style="{backgroundImage:`url(${data2[0].image})`}"
         > 
         </div>
-        <div class="grid">
-            <h2>{{ data2[0].character }}</h2>
+        <div class="grid max-w-[50%]">
+            <h2 class="font-bold">{{ data2[0].character }}</h2>
             <p class="text-xs">{{ data2[0].quote }}</p>
         </div>
         <div 
             :class="{'hidden': data2[0].characterDirection  === left}"
-            class="w-[50%] h-auto bg-top bg-cover rounded-full"
+            class="w-28 h-28 bg-top bg-cover rounded-full bg-white"
             :style="{backgroundImage:`url(${data2[0].image})`}"
         > 
         </div>

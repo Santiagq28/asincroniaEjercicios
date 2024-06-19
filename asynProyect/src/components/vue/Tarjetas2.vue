@@ -1,18 +1,18 @@
 <template>
-    <div v-if="data2" class="flex bg-slate-400 w-[60vh] h-36 p-4 m-4"> 
+    <div v-if="data2" class="flex bg-slate-400 w-[60vh] h-36 p-4 m-4 justify-around rounded border border-black"> 
       <div 
         v-if="data2[0].characterDirection === 'Left'"
-        class="w-[50%] h-auto bg-top bg-cover rounded-full"
+        class="w-28 h-28 bg-top bg-cover rounded-full bg-white"
         :style="{ backgroundImage: `url(${data2[0].image})` }"
       > 
       </div>
-      <div class="grid">
-        <h2>{{ data2[0].character }}</h2>
+      <div class="grid max-w-[50%]">
+        <h2 class="font-bold">{{ data2[0].character }}</h2>
         <p class="text-xs">{{ data2[0].quote }}</p>
       </div>
       <div 
         v-if="data2[0].characterDirection === 'Right'"
-        class="w-[50%] h-auto bg-top bg-cover rounded-full"
+        class="w-28 h-28 bg-top bg-cover rounded-full bg-white"
         :style="{ backgroundImage: `url(${data2[0].image})` }"
       > 
       </div>
